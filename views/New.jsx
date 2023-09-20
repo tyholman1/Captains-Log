@@ -5,16 +5,14 @@ class New extends React.Component {
     return (
       <div>
         <h1>New Log</h1>
-        <form action="/log" method="POST">
-            Title: <input type="text" value="title" />
-            Entry: <input type="textarea" value="entry" />
-            Ship Broken: <input type="checkbox" value="shipIsBroken" />
-            <input type="submit" value="Submit" />
-
-
+        <form action="/logs" method="POST">
+            Title: <input type="text" name="title" />
+            Entry: <textarea name="entry" />
+            Ship Broken: <input type="checkbox" name="shipIsBroken" />
+            <input type="submit" value="Boogers" />
         </form>
         <nav>
-          <a href="/fruits">Back</a>
+            <a href="/logs">Back</a>
         </nav>
       </div>
     )
